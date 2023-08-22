@@ -1,3 +1,6 @@
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
+import { setTargetElement, getTargetElement } from './common/global'
+
 document.addEventListener('DOMContentLoaded', () => {
 	'use strict'
 
@@ -25,6 +28,7 @@ const headerScroll = () => {                 //Header scroll function, if header
 const toogleBurgerMenu = () => {
 	const burgerButton = document.querySelector('.burger__button')
 	const headerWrapper = document.querySelector('.header__wrapper')
+	setTargetElement(document.querySelector('#menu-lock')) //Target element for body lock
 
 	burgerButton.addEventListener('click', () => {
 
@@ -33,10 +37,12 @@ const toogleBurgerMenu = () => {
 		if (!headerWrapper.classList.contains('opened')) {
 			headerWrapper.classList.add('opened')
 			headerWrapper.classList.remove('closed')
+			disableBodyScroll(getTargetElement(), { reserveScrollBarGap: true })
 		} else {
 			headerWrapper.classList.add('closed')
 			setTimeout(() => headerWrapper.classList.remove('opened'), 350);
 			setTimeout(() => headerWrapper.classList.remove('closed'), 350);
+			enableBodyScroll(getTargetElement())
 		}
 	})
 
@@ -47,12 +53,13 @@ const toogleBurgerMenu = () => {
 		if (windowWidth >= WINDOW_WIDTH_MD && headerWrapper.classList.contains('opened')) {
 			headerWrapper.classList.remove('opened')
 			headerWrapper.classList.remove('closed')
+			enableBodyScroll(getTargetElement())
 		}
 	})
 }
 
 const closeMenuByTapLink = () => {
-	const links = document.querySelectorAll('.list__link')
+	const links = document.querySelectorAll('.menu-item a')
 	const headerWrapper = document.querySelector('.header__wrapper')
 
 	if (!links.length && !headerWrapper) return
@@ -61,6 +68,7 @@ const closeMenuByTapLink = () => {
 		link.addEventListener('click', () => {
 			if (headerWrapper.classList.contains('opened')) {
 				headerWrapper.classList.remove('opened')
+				enableBodyScroll(getTargetElement())
 			} else return
 		})
 	})
