@@ -1,0 +1,80 @@
+.footer {
+	padding: 97px 0 22px;
+
+	.container {
+		max-width: 1700px;
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.footer__rows {
+		width: 70%;
+	}
+
+	.footer__row {
+		display: flex;
+
+		&:first-child {
+			.footer__col {
+				color: $black;
+				font-family: $ff-lato;
+				font-size: 16px;
+				font-style: italic;
+				font-weight: $fw-regular;
+				line-height: 25.6px;
+				margin-bottom: 28px;
+			}
+		}
+	}
+
+	&__link {
+		color: $black;
+		font-family: $ff-lato;
+		font-size: 16px;
+		font-style: italic;
+		font-weight: $fw-bold;
+		line-height: 25.6px;
+	}
+
+	.footer__col {
+		width: 16.66%;
+	}
+
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+
+		&_title {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__socials {
+		display: flex;
+		align-items: center;
+		margin-bottom: 40px;
+	}
+
+	&__social {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 86px;
+		height: 91px;
+		border-radius: 10px;
+		background-color: #EBE9E9;
+		filter: drop-shadow(0px 2.767256498336792px 2.2138051986694336px rgba(0, 0, 0, 0.02)) drop-shadow(0px 6.650102138519287px 5.32008171081543px rgba(0, 0, 0, 0.03)) drop-shadow(0px 12.521552085876465px 10.017241477966309px rgba(0, 0, 0, 0.04)) drop-shadow(0px 22.3363094329834px 17.869047164916992px rgba(0, 0, 0, 0.04)) drop-shadow(0px 41.777610778808594px 33.422088623046875px rgba(0, 0, 0, 0.05)) drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.07));
+		margin-right: 26px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.footer__link {
+		padding-right: 5px;
+	}
+}
