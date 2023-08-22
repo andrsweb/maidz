@@ -166,20 +166,43 @@
 
 	&__nums {
 		width: 100%;
-		
 		display: flex;
 		justify-content: center;
 
 		@media all and (min-width: $xl) {
-			justify-content: flex-start;
 			max-width: 450px;
+		}
+
+		@media all and (min-width: $xxl) {
+			justify-content: space-between;
 		}
 
 		&_item {
 			margin-right: 25px;
 
+			&:first-child {
+				width: 100px;
+
+				@media all and (min-width: $md) {
+					width: 112px;
+				}
+
+				@media all and (min-width: $xl) {
+					width: 151px;
+				}
+			}
+
 			&:last-child {
+				width: 122px;
 				margin-right: 0;
+
+				@media all and (min-width: $md) {
+					width: 144px;
+				}
+
+				@media all and (min-width: $xl) {
+					width: 222px;
+				}
 			}
 
 			@media all and (min-width: $xl) {
@@ -205,7 +228,7 @@
 				font-size: 54px;
 			}
 
-			span {
+			.plus {
 				font-size: 20px;
 
 				@media all and (min-width: $xl) {
