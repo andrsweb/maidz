@@ -99,16 +99,21 @@
 
 .swiper-pagination {
 	position: relative;
-	margin-top: 82px;
+	margin-top: 38px;
 
 	&-bullet {
 		width: 20px;
 		height: 20px;
 		background-color: #999999;
 		opacity: 1;
+		transition: scale ease $tr;
 
 		&-active {
 			background-color: $rose;
+		}
+
+		&:hover {
+			scale: 1.1;
 		}
 	}
 }
