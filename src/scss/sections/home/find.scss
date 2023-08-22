@@ -1,0 +1,78 @@
+.find {
+	padding: 84px 0 87px;
+	background-color: $accent;
+
+	.container {
+		max-width: 1000px;
+	}
+
+	.h2 {
+		color: $white;
+		margin-bottom: 30px;
+	}
+
+	&__subtext {
+		color: $white;
+		text-align: center;
+		font-family: $ff;
+		font-size: 17px;
+		font-style: normal;
+		font-weight: $fw-bold;
+		line-height: 23.4px;
+		margin-bottom: 30px;
+	}
+
+	&__nums {
+		display: flex;
+		justify-content: center;
+
+		&_item {
+			margin-right: 100px;
+	
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	&__item_title {
+		display: flex;
+		color: $white;
+		font-family: $ff;
+		font-size: 45px;
+		font-style: normal;
+		font-weight: $fw-bold;
+		line-height: normal;
+		margin-bottom: 5px;
+
+		span {
+			font-size: 33px;
+		}
+	}
+
+	&__item_text {
+		color: $white;
+		font-family: $ff-lato;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: $fw-regular;
+		line-height: normal;
+	}
+
+	&__form_wrapper {
+		margin-top: 32px;
+	}
+
+	fieldset {
+		display: flex;
+	}
+
+	.button {
+		font-weight: $fw-bold;
+		max-width: 221px;
+		background-color: $white;
+		color: $black;
+		font-size: 16px;
+		margin-left: 24px;
+	}
+}
