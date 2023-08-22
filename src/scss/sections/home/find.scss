@@ -1,6 +1,10 @@
 .find {
-	padding: 84px 0 87px;
+	padding: 40px 0;
 	background-color: $accent;
+
+	@media all and (min-width: $md) {
+		padding: 84px 0 87px;
+	}
 
 	.container {
 		max-width: 1000px;
@@ -15,16 +19,25 @@
 		color: $white;
 		text-align: center;
 		font-family: $ff;
-		font-size: 17px;
+		font-size: 15px;
 		font-style: normal;
 		font-weight: $fw-bold;
 		line-height: 23.4px;
 		margin-bottom: 30px;
+
+		@media all and (min-width: $md) {
+			font-size: 17px;
+		}
 	}
 
 	&__nums {
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
+
+		@media all and (min-width: $md) {
+			flex-direction: row;
+		}
 
 		&_item {
 			margin-right: 100px;
@@ -65,14 +78,24 @@
 
 	fieldset {
 		display: flex;
+		flex-direction: column;
+
+		@media all and (min-width: $md) {
+			flex-direction: row;
+		}
 	}
 
 	.button {
 		font-weight: $fw-bold;
-		max-width: 221px;
+		margin-top: 20px;
 		background-color: $white;
 		color: $black;
 		font-size: 16px;
-		margin-left: 24px;
+
+		@media all and (min-width: $md) {
+			margin-left: 24px;
+			max-width: 221px;
+			margin-top: 0;
+		}
 	}
 }
