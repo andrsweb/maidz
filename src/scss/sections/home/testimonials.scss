@@ -29,11 +29,15 @@
 }
 
 .swiper-wrapper {
-	height: 380px;
+	min-height: 380px;
 }
 
 .slide__wrapper {
-	padding: 25px 55px 55px 55px;
+	padding: 25px;
+
+	@media all and (min-width: $md) {
+		padding: 25px 55px 55px 55px;
+	}
 }
 
 .slide__info {
@@ -50,27 +54,40 @@
 	&_name, &_info {
 		color: #222328;
 		font-family: $ff;
-		font-size: 19px;
+		font-size: 15px;
 		font-style: normal;
 		font-weight: $fw-bold;
 		line-height: normal;
+
+		@media all and (min-width: $md) {
+			font-size: 19px;
+		}
 	}
 
 	&_info {
 		font-weight: $fw-regular;
-		font-size: 15px;
+		font-size: 12px;
+
+		@media all and (min-width: $md) {
+			font-size: 15px;
+		}
 	}
 }
 
 .slide__text {
 	color: #222328;
 	font-family: $ff-lato;
-	font-size: 16px;
+	font-size: 12px;
 	font-style: italic;
 	font-weight: $fw-regular;
 	line-height: 25.6px;
-	padding-left: 50px;
+	padding-left: 20px;
 	position: relative;
+
+	@media all and (min-width: $md) {
+		font-size: 16px;
+		padding-left: 50px;
+	}
 
 	&::before {
 		content: "“";
@@ -80,10 +97,14 @@
 		width: 48px;
 		color: #222328;
 		font-family: $ff;
-		font-size: 124px;
+		font-size: 80px;
 		font-style: normal;
 		font-weight: $fw-regular;
 		line-height: normal;
+
+		@media all and (min-width: $md) {
+			font-size: 124px;
+		}
 	}
 }
 
