@@ -62,7 +62,7 @@
 					}
 				}
 	
-				@media all and (min-width: $md) {
+				@media all and (min-width: $lg) {
 					padding: 30px 40px 30px 40px;
 					border-top: 0;
 	
@@ -78,7 +78,6 @@
 
 			.header__nav {
 				margin: 0;
-				padding-top: 10%;
 			}
 
 			.menu {
@@ -139,10 +138,10 @@
 
 	&__inner {
 		display: none;
-		width: calc(100% - 301px);
+		width: calc(100% - 77px);
 		justify-content: center;
 
-		@media all and (min-width: $md) {
+		@media all and (min-width: $lg) {
 			display: flex;
 		}
 	}
