@@ -12,13 +12,10 @@
 	padding: 20px 53px;
 	cursor: pointer;
 	white-space: nowrap;
-	transition: background-color ease $tr,
-				color ease $tr,
-				border-color ease $tr;
+	transition: opacity ease $tr;
 
 	&:hover {
-		background-color: hsl(313, 100%, 73%);
-		border-color: hsl(313, 100%, 73%);
+		opacity: $op;
 	}
 
 	&.transparent {
@@ -28,9 +25,19 @@
 		font-weight: $fw-bold;
 
 		&:hover {
-			background-color: $grey;
-			color: $white;
-			border-color: $grey;
+			opacity: $op;
+		}
+	}
+
+	&.white {
+		padding: 25px 50px; 
+		background-color: $white;
+		color: $rose;
+		font-size: 16px;
+		font-weight: $fw-bold;
+
+		&:hover {
+			opacity: $op;
 		}
 	}
 }

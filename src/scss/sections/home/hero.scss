@@ -1,0 +1,171 @@
+.hero {
+	padding: 190px 0 0;
+	background-color: $accent;
+
+	.container {
+		max-width: 1260px;
+	}
+
+	&__headings {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		max-width: 1010px;
+		margin: 0 auto;
+		padding-left: 130px;
+	}
+
+	&__subtext {
+		color: $white;
+		font-family: $ff-medula;
+		font-size: 96px;
+		font-style: normal;
+		font-weight: $fw-regular;
+		line-height: normal;
+	}
+
+	&__subtitle {
+		color: $white;
+		font-family: $ff;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: $fw-bold;
+		line-height: normal;
+		margin-top: 5px;
+	}
+
+	&__text {
+		color: $white;
+		font-family: $ff;
+		font-size: 39px;
+		font-style: normal;
+		font-weight: $fw-bold;
+		line-height: normal;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		max-width: 850px;
+		margin: 50px auto 0 auto;
+		text-align: left;
+		padding-left: 120px;
+	}
+
+	&__bottom {
+		padding: 19px 50px 0 34px;
+		background-color: $white;
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+
+		&_text {
+			width: 100%;
+			max-width: 415px;
+			color: $black;
+			font-family: $ff;
+			font-size: 19px;
+			font-style: normal;
+			font-weight: $fw-regular;
+			line-height: 32px;
+		}
+	}
+
+	&__rate {
+		display: flex;
+		flex-direction: column;
+		padding-top: 22px;
+		margin-right: 50px;
+
+		&_stars {
+			width: 100%;
+			max-width: 200px;
+			display: flex;
+
+			picture {
+				margin-right: 10px;
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+
+		&_text {
+			color: $black;
+			font-family: $ff-lato;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: $fw-regular;
+			line-height: normal;
+			text-align: center;
+			margin-top: 18px;
+		}
+	}
+
+	&__nums {
+		width: 100%;
+		max-width: 450px;
+		display: flex;
+
+		&_item {
+			margin-right: 60px;
+		}
+
+		&_title {
+			display: flex;
+			color: $black;
+			font-family: $ff;
+			font-size: 54px;
+			font-style: normal;
+			font-weight: $fw-bold;
+			line-height: normal;
+			margin-bottom: 10px;
+
+			span {
+				font-size: 38px;
+			}
+		}
+
+		&__text {
+			color: $black;
+			font-family: $ff-lato;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: $fw-regular;
+			line-height: normal;
+		}
+	}
+
+	&__buttons {
+		margin-top: 57px;
+		margin-bottom: 34px;
+		display: flex;
+		justify-content: center;
+		padding-left: 90px;
+
+		.find {
+			margin-right: 58px;
+		}
+
+		.sign-up {
+			padding: 25px 104px;
+		}
+	}
+
+	.girl__left, .girl__right {
+		position: absolute;
+	}
+
+	.girl__left {
+		left: -225px;
+		top: -510px;
+	}
+
+	.girl__right {
+		right: -300px;
+		top: -600px;
+	}
+}

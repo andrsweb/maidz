@@ -11,10 +11,15 @@ h6, .h6 {
 }
 
 h1, .h1 {
-	font-size: 32px;
+	color: $white;
+	font-family: $ff-monts;
+	font-size: 96px;
+	font-style: normal;
+	font-weight: $fw-bold;
+	line-height: 70px;
 
 	@media all and (min-width: $lg) {
-		font-size: 36px
+		font-size: 96px
 	}
 }
 
