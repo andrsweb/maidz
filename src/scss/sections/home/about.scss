@@ -1,6 +1,10 @@
 .about {
-	padding: 54px 0 76px;
+	padding: 40px 0;
 	background-color: $accent;
+
+	@media all and (min-width: $xl) {
+		padding: 54px 0 76px;
+	}
 
 	.container {
 		max-width: 1615px;
@@ -13,9 +17,14 @@
 	}
 
 	&__item {
-		width: calc(100% / 3);
+		width: calc(100% / 1);
 		padding: 0 35px;
-		margin-bottom: 10px;
+		margin-bottom: 40px;
+
+		@media all and (min-width: $lg) {
+			width: calc(100% / 3);
+			margin-bottom: 10px;
+		}
 
 		&_img {
 			display: flex;
@@ -70,7 +79,15 @@
 	&__button_wrapper {
 		display: flex;
 		justify-content: center;
-		margin-top: 152px;
+		margin-top: 60px;
+
+		@media all and (min-width: $md) {
+			margin-top: 90px;
+		}
+
+		@media all and (min-width: $lg) {
+			margin-top: 152px;
+		}
 
 		.button {
 			padding: 25px 110px;
