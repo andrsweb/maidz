@@ -1,0 +1,48 @@
+.starts {
+	padding: 60px 0 85px;
+
+	.container {
+		max-width: 1800px;
+	}
+
+	.h2 {
+		margin-bottom: 80px;
+	}
+
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+	}
+
+	&__item {
+		color: $black;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		font-family: $ff;
+		font-size: 40px;
+		font-style: normal;
+		font-weight: $fw-extra;
+		line-height: normal;
+		margin-bottom: 24px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__left  {
+		width: 100%;
+		max-width: 507px;
+		padding-left: 80px;
+	}
+
+	&__right {
+		width: 100%;
+		max-width: 480px;
+	}
+
+	&__img {
+		display: flex;
+		align-items: center;
+	}
+}
