@@ -28,6 +28,10 @@
 	}
 }
 
+.swiper-wrapper {
+	height: 380px;
+}
+
 .slide__wrapper {
 	padding: 25px 55px 55px 55px;
 }
@@ -168,7 +172,7 @@
 		padding: 5px;
 		display: flex;
 		position: absolute;
-		left: 40px;
+		left: 10px;
 		bottom: 40px;
 		color: $white;
 		z-index: 2;
@@ -176,6 +180,10 @@
 		background-color: rgba(0, 0, 0, 0.25);
 		box-shadow: 2px 2px 14px $black;
 		pointer-events: none;
+
+		@media all and (min-width: $md) {
+			left: 40px;
+		}
 
 		&_inner {
 			display: flex;
