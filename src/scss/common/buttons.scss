@@ -1,0 +1,36 @@
+.button {
+	color: $white;
+	text-align: center;
+	font-family: $ff;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: $fw-regular;
+	line-height: 0px;
+	border-radius: 10px;
+	border: 1px solid $rose;
+	background-color: $accent;
+	padding: 20px 53px;
+	cursor: pointer;
+	white-space: nowrap;
+	transition: background-color ease $tr,
+				color ease $tr,
+				border-color ease $tr;
+
+	&:hover {
+		background-color: hsl(313, 100%, 73%);
+		border-color: hsl(313, 100%, 73%);
+	}
+
+	&.transparent {
+		background-color: transparent;
+		color: $black;
+		border: 1px solid #130F26;
+		font-weight: $fw-bold;
+
+		&:hover {
+			background-color: $grey;
+			color: $white;
+			border-color: $grey;
+		}
+	}
+}

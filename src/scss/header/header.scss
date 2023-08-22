@@ -1,0 +1,82 @@
+.header {
+	padding: 15px 0;
+	position: fixed;
+	width: 100vw;
+	left: 0;
+	top: 0;
+	background-color: $white;
+
+	.container {
+		max-width: 1700px;
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__inner {
+		width: calc(100% - 301px);
+		display: flex;
+		justify-content: center;
+	}
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		width: 301px;
+		height: 78px;
+		color: $black;
+		font-family: $ff-medula;
+		font-size: 64px;
+		font-style: normal;
+		font-weight: $fw-regular;
+		line-height: 25.6px;
+		text-transform: uppercase;
+		margin-right: 125px;
+	}
+
+	&__nav {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+	}
+
+	.menu {
+		display: flex;
+		align-items: center;
+
+		&-item {			
+			margin-right: 28px;
+
+			a {
+				color: $black;
+				font-family: $ff;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: $fw-regular;
+				line-height: 0px;
+				transition: color ease $tr;
+
+				&:last-child {
+					margin-right: 0;
+				}
+	
+				&:hover {
+					opacity: 1;
+					color: $accent;
+				}
+			}
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		margin-left: auto;
+	}
+
+	.sign-up {
+		margin-left: 10px;
+	}
+}
