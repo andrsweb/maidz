@@ -44,5 +44,9 @@
   },
   "browserslist": [
     "last 3 versions"
-  ]
+  ],
+  "dependencies": {
+    "lazyframe": "^2.2.7",
+    "swiper": "^10.2.0"
+  }
 }
