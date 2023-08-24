@@ -97,7 +97,7 @@
 		position: relative;
 
 		@media all and (min-width: $xl) {
-			padding: 19px 50px 0 34px;
+			padding: 19px 0 0 34px;
 			flex-direction: row;
 		}
 
@@ -218,7 +218,6 @@
 			font-style: normal;
 			font-weight: $fw-bold;
 			line-height: normal;
-			margin-bottom: 10px;
 
 			@media all and (min-width: $md) {
 				font-size: 40px;
@@ -237,13 +236,14 @@
 			}
 		}
 
-		&__text {
+		&_text {
 			color: $black;
 			font-family: $ff-lato;
 			font-size: 18px;
 			font-style: normal;
 			font-weight: $fw-regular;
 			line-height: normal;
+			padding-left: 5px;
 		}
 	}
 
