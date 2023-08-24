@@ -29,10 +29,10 @@ const toogleBurgerMenu = () => {
 	const burgerButton = document.querySelector('.burger__button')
 	const headerWrapper = document.querySelector('.header__wrapper')
 	setTargetElement(document.querySelector('#menu-lock')) //Target element for body lock
+	if (!burgerButton && !headerWrapper) return
+
 
 	burgerButton.addEventListener('click', () => {
-
-		if (!burgerButton && !headerWrapper) return
 
 		if (!headerWrapper.classList.contains('opened')) {
 			headerWrapper.classList.add('opened')
