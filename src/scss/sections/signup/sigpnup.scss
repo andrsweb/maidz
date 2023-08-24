@@ -20,16 +20,20 @@
 
 	&__title {
 		width: 100%;
-		max-width: 441px;
 		color: $white;
 		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 		font-family: $ff;
-		font-size: 40px;
+		font-size: 30px;
 		font-style: normal;
 		font-weight: $fw-extra;
 		line-height: normal;
 		margin-bottom: 100px;
-		padding-left: 30px;
+
+		@media all and (min-width: $xl) {
+			max-width: 441px;
+			font-size: 40px;
+			padding-left: 30px;
+		}
 	}
 
 	&__img {
@@ -39,46 +43,104 @@
 
 	&__wrapper {
 		display: flex;
+		flex-direction: column;
 		justify-content: space-between;
+
+		@media all and (min-width: $xl) {
+			flex-direction: row;
+		}
 	}
 
 	&__left {
 		width: 100%;
-		padding: 70px 0 0 60px;
-		max-width: 550px;
-		height: 100vh;		
+		padding: 20px;
+
+		@media all and (min-width: $xl) {
+			padding: 70px 0 0 60px;
+			max-width: 550px;
+			height: 100vh;
+		}
 	}
 
 	&__right {
-		width: calc(100% - 550px);
-		padding: 84px 125px 20px 0;
+		width: 100%;
+		padding: 30px;
 		background-color: $white;
-		border-top-left-radius: 30px;
-		border-bottom-left-radius: 30px;
+
+		@media all and (min-width: $xl) {
+			width: calc(100% - 550px);
+			padding: 44px 30px 20px 0;
+			border-top-left-radius: 30px;
+			border-bottom-left-radius: 30px;
+		}
+
+		@media all and (min-width: $xxl) {
+			padding: 84px 125px 20px 0;
+		}
 
 		&_wrapper {
-			padding-left: 120px;
+			@media all and (min-width: $xl) {
+				padding-left: 40px;
+			}
+
+			@media all and (min-width: $xxl) {
+				padding-left: 120px;
+			}
 		}
 
 		.h2 {
-			text-align: left;
-			margin: 34px 0 70px;
+			text-align: center;
+			margin: 30px 0;
+
+			@media all and (min-width: $xl) {
+				text-align: left;
+				margin: 34px 0 70px;
+			}
 		}
 
 		&_lang {
 			display: flex;
 			justify-content: space-between;
-			padding-left: 95px;
+
+			@media all and (min-width: $lg) {
+				padding-left: 95px;
+			}
 		}
 	}
 
 	&__buttons {
 		display: flex;
+		flex-direction: column;
 		justify-content: flex-start;
+		align-items: center;
+
+		@media all and (min-width: $sm) {
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		@media all and (min-width: $xl) {
+			justify-content: flex-start;
+		}
 
 		.signup__button {
+			width: 100%;
+
 			&:first-child {
-				margin-right: 50px;
+				margin-bottom: 20px;
+
+				@media all and (min-width: $sm) {
+					margin-right: 10px;
+					margin-bottom: 0;
+				}
+
+				@media all and (min-width: $xl) {
+					margin-right: 50px;
+				}
+			}
+
+			@media all and (min-width: $sm) {
+				width: auto;
 			}
 		}
 	}
@@ -91,8 +153,12 @@
 		font-style: normal;
 		font-weight: $fw-medium;
 		line-height: normal;
-		margin: 81px 0 95px;
-		max-width: 585px;
+		margin: 20px 0;
+
+		@media all and (min-width: $xl) {
+			margin: 81px 0 95px;
+			max-width: 585px;
+		}
 	}
 
 	&__arrow {
@@ -137,6 +203,7 @@
 
 			&_item {
 				transition: opacity ease $tr;
+				background-color: $white;
 
 				&:hover {
 					opacity: $op;
@@ -155,17 +222,25 @@
 
 	&__form_wrapper {
 		max-width: 613px;
+		margin: 0 auto;
+
+		@media all and (min-width: $xl) {
+			margin: 0;
+		}
 	}
 
 	fieldset {
-
 		label {
 			color: #807676;
 			font-family: $ff;
-			font-size: 18px;
+			font-size: 16px;
 			font-style: normal;
 			font-weight: $fw-medium;
-			line-height: normal;		
+			line-height: normal;
+			
+			@media all and (min-width: $lg) {
+				font-size: 18px;
+			}
 		}
 
 		input {
@@ -176,20 +251,28 @@
 			padding-left: 0;
 			color: #807676;
 			font-family: $ff;
-			font-size: 18px;
+			font-size: 16px;
 			font-style: normal;
 			font-weight: $fw-medium;
 			line-height: normal;
 			margin-bottom: 28px;
 			padding: 8px 0;
 
+			@media all and (min-width: $lg) {
+				font-size: 18px;
+			}
+
 			&::placeholder {
 				color: #807676;
 				font-family: $ff;
-				font-size: 18px;
+				font-size: 16px;
 				font-style: normal;
 				font-weight: $fw-medium;
 				line-height: normal;
+
+				@media all and (min-width: $lg) {
+					font-size: 18px;
+				}
 			}
 		}
 
@@ -244,13 +327,21 @@
 	&__link {
 		color: #807676;
 		font-family: $ff;
-		font-size: 20px;
+		font-size: 15px;
 		font-style: normal;
 		font-weight: $fw-medium;
 		line-height: normal;
 
 		&:first-child {
-			margin-right: 40px;
+			margin-right: 10px;
+
+			@media all and (min-width: $lg) {
+				margin-right: 40px;
+			}
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 20px;
 		}
 	}
 }
