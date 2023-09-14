@@ -1,21 +1,26 @@
 .signup {
 	width: 100vw;
-	height: 100vh;
+	min-height: 100vh;
 	background-color: $accent;
-	overflow-y: auto;
 
 	.container-fluid {
 		padding: 0;
 	}
 
 	&__logo {
-		color: $white;
-		font-family: $ff-medula;
-		font-size: 64px;
-		font-style: normal;
-		font-weight: $fw-regular;
-		line-height: 25.6px;
-		margin-bottom: 82px;
+		width: 100%;
+		max-width: 180px;
+		margin: 0 auto 82px auto;
+
+		@media all and (min-width: $xl) {
+			margin: 0 0 82px 0;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
 	}
 
 	&__title {
@@ -52,13 +57,15 @@
 	}
 
 	&__left {
+		display: flex;
+		flex-direction: column;
 		width: 100%;
 		padding: 20px;
 
 		@media all and (min-width: $xl) {
 			padding: 70px 0 0 60px;
 			max-width: 550px;
-			height: 100vh;
+			min-height: 100vh;
 		}
 	}
 
@@ -78,6 +85,19 @@
 			padding: 84px 125px 20px 0;
 		}
 
+		&_title {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin: 30px auto 30px auto;
+			width: 100%;
+			max-width: 613px;
+
+			@media all and (min-width: $xl) {
+				margin: 34px 0 70px;
+			}
+		}
+
 		&_wrapper {
 			@media all and (min-width: $xl) {
 				padding-left: 40px;
@@ -90,20 +110,10 @@
 
 		.h2 {
 			text-align: center;
-			margin: 30px 0;
+			margin: 0;
 
 			@media all and (min-width: $xl) {
 				text-align: left;
-				margin: 34px 0 70px;
-			}
-		}
-
-		&_lang {
-			display: flex;
-			justify-content: space-between;
-
-			@media all and (min-width: $lg) {
-				padding-left: 95px;
 			}
 		}
 	}
@@ -162,8 +172,8 @@
 	}
 
 	&__arrow {
-		width: 28px;
-		height: 28px;
+		width: 20px;
+		height: 20px;
 		cursor: pointer;
 		transition: opacity ease $tr;
 
@@ -176,47 +186,10 @@
 			height: 100%;
 			object-fit: contain;
 		}
-	}
 
-	&__lang {
-		background-color: transparent;
-		display: flex;
-		flex-direction: column;
-		position: relative;
-		color: #000;
-		font-family: $ff;
-		font-size: 20px;
-		font-style: normal;
-		font-weight: $fw-regular;
-		line-height: normal;
-		cursor: pointer;
-
-		.hidden__menu {
-			display: none;
-			position: absolute;
-			top: 30px;
-			left: 4px;
-
-			&.clicked {
-				display: block;
-			}
-
-			&_item {
-				transition: opacity ease $tr;
-				background-color: $white;
-
-				&:hover {
-					opacity: $op;
-				}
-			}
-		}
-
-		&_arr {
-			width: 18px;
-			height: 9px;
-			position: absolute;
-			right: -20px;
-			top: 6px;
+		@media all and (min-width: $lg) {
+			width: 28px;
+			height: 28px;
 		}
 	}
 

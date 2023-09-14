@@ -37,10 +37,10 @@
 				flex-direction: column;
 				align-items: center;
 				position: absolute;
-				top: 95px;
+				top: 94px;
 				right: 0;
 				width: 100%;
-				height: calc(100vh - 95px);
+				height: calc(100vh - 94px);
 				padding: 20px 12px;
 				background-color: $white;
 				animation: fade1 $tr forwards linear;
@@ -138,17 +138,21 @@
 
 	&__inner {
 		display: none;
-		width: calc(100% - 77px);
+		width: 100%;
 		justify-content: center;
 
 		@media all and (min-width: $lg) {
 			display: flex;
+			width: calc(100% - 170px);
+		}
+
+		@media all and (min-width: $xl) {
+			width: calc(100% - 300px);
 		}
 	}
 
 	&__logo {
-		width: 77px;
-		height: 43px;
+		width: 140px;
 		display: flex;
 		align-items: center;
 		color: $black;
@@ -160,6 +164,21 @@
 		text-transform: uppercase;
 		position: relative;
 		z-index: 1;
+
+		@media all and (min-width: $lg) {
+			margin-right: 30px;
+		}
+
+		@media all and (min-width: $xl) {
+			width: 180px;
+			margin-right: 120px;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
 	}
 
 	&__nav {
@@ -173,7 +192,7 @@
 		align-items: center;
 
 		&-item {
-			margin-right: 28px;
+			margin-right: 15px;
 
 			a {
 				color: $black;
@@ -193,6 +212,10 @@
 					color: $accent;
 				}
 			}
+		}
+
+		@media all and (min-width: $xl) {
+			margin-right: 28px;
 		}
 	}
 

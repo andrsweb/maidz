@@ -1,182 +1,66 @@
 <footer class="footer">
 	<div class="container">
 		<div class="footer__wrapper">
-			<div class="footer__rows">
-				<div class="footer__row">
-					<div class="footer__col">
+			<div class="footer__navs">
+				<nav class="footer__nav">
+					<h5 class="h5">
 						For Hosts
-					</div>
-					<div class="footer__col"></div>
-					<div class="footer__col"></div>
-					<div class="footer__col">
-						Services
-					</div>
-					<div class="footer__col">
-						Resources
-					</div>
-					<div class="footer__col">
-						Branding
-					</div>
-				</div>
-				<div class="footer__row">
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							Maids in Arizona
-						</a>
-					</div>
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							Maids in Kansas
-						</a>
-					</div>
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							Maids in Rhode Island
-						</a>
-					</div>
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							Topless Maids
-						</a>
-					</div>
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							Who We Work With
-						</a>
-					</div>
-					<div class="footer__col"></div>
-				</div>
-				<div class="footer__row">
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							Maids in Californi
-						</a>
-					</div>
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							Maids in Louisniana
-						</a>
-					</div>
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							Maids in South Dakota
-						</a>
-					</div>
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							Multiple Maids
-						</a>
-					</div>
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							Guide for New Hosts
-						</a>
-					</div>
-					<div class="footer__col"></div>
-				</div>
-				<div class="footer__row">
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							Maids in Deleware
-						</a>
-					</div>
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							Maids in Maine
-						</a>
-					</div>
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							Maids in Texas
-						</a>
-					</div>
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							Twin Maids
-						</a>
-					</div>
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							Guide for New Maids
-						</a>
-					</div>
-					<div class="footer__col"></div>
-				</div>
-				<div class="footer__row">
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							Maids in Florida
-						</a>
-					</div>
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							Maids in Nevada
-						</a>
-					</div>
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							Maids in Utah
-						</a>
-					</div>
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							Male Butlers
-						</a>
-					</div>
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							Privacy Policy
-						</a>
-					</div>
-					<div class="footer__col"></div>
-				</div>
-				<div class="footer__row">
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							Maids in Hawaii
-						</a>
-					</div>
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							Maids in Ohio
-						</a>
-					</div>
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							And More...
-						</a>
-					</div>
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							Suggest Additional Services
-						</a>
-					</div>
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							FAQ
-						</a>
-					</div>
-					<div class="footer__col"></div>
-				</div>
-				<div class="footer__row">
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							Maids in Idaho
-						</a>
-					</div>
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							Maids in Pennsylvania
-						</a>
-					</div>
-					<div class="footer__col"></div>
-					<div class="footer__col"></div>
-					<div class="footer__col">
-						<a class="footer__link" href="#">
-							Anti-Slavery and Anti-Trafficking Statement
-						</a>
-					</div>
-					<div class="footer__col"></div>
+					</h5>
+					<ul class="menu footer__menu columns-3">
+						@@loop('./menu-item.html', [
+						{'link': 'Maids in Arizona'},
+						{'link': 'Maids in California', 'class': 'bold'},
+						{'link': 'Maids in Deleware', 'class': 'bold'},
+						{'link': 'Maids in Florida', 'class': 'bold'},
+						{'link': 'Maids in Hawaii', 'class': 'bold'},
+						{'link': 'Maids in Idaho', 'class': 'bold'},
+						{'link': 'Maids in Kansas'},
+						{'link': 'Maids in Louisniana'},
+						{'link': 'Maids in Maine', 'class': 'bold'},
+						{'link': 'Maids in Nevada', 'class': 'bold'},
+						{'link': 'Maids in Ohio', 'class': 'bold'},
+						{'link': 'Maids in Pennsylvania'},
+						{'link': 'Maids in Rhode Island'},
+						{'link': 'Maids in South Dakota', 'class': 'bold'},
+						{'link': 'Maids in Texas', 'class': 'bold'},
+						{'link': ''},
+						{'link': ''},
+						{'link': 'And More...', 'class': 'bold'}
+						])
+					</ul>
+				</nav>
+				<div class="footer__nav_wrapper">
+					<nav class="footer__nav">
+						<h5 class="h5">
+							Services
+						</h5>
+						<ul class="menu footer__menu">
+							@@loop('./menu-item.html', [
+							{'link': 'Topless Maids'},
+							{'link': 'Nude Maids'},
+							{'link': 'Multiple Maids'},
+							{'link': 'Twin Maids'},
+							{'link': 'Male Butlers'},
+							{'link': 'Suggest Additional Services'}
+							])
+						</ul>
+					</nav>
+					<nav class="footer__nav">
+						<h5 class="h5">
+							Resources
+						</h5>
+						<ul class="menu footer__menu">
+							@@loop('./menu-item.html', [
+							{'link': 'Who We Work With'},
+							{'link': 'Guide for New Hosts'},
+							{'link': 'Guide for New Maids'},
+							{'link': 'Privacy Policy'},
+							{'link': 'FAQ'},
+							{'link': 'Anti-Slavery and Anti-Trafficking Statement'},
+							{'link': 'Branding'}
+							])
+						</ul>
+					</nav>
 				</div>
 			</div>
 			<div class="footer__contacts">
@@ -195,7 +79,7 @@
 					</a>
 				</div>
 				<div class="footer__rights">
-					C 2023 ONLY MAIDZ ALL RIGHTS RESERVED
+					© 2023 MAIDZ ALL RIGHTS RESERVED
 				</div>
 			</div>
 		</div>
